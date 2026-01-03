@@ -41,7 +41,7 @@ export default function CandidateDetailPage() {
 
   const API_BASE = useMemo(() => {
     
-    return process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+    return process.env.NEXT_PUBLIC_API_URL!;
   }, []);
 
   const [candidate, setCandidate] = useState<Candidate | null>(null);

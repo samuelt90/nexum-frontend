@@ -127,7 +127,7 @@ export default function ApplyPage() {
 
     setSubmitting(true);
     try {
-      const baseUrl = process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001";
+      const baseUrl = process.env.NEXT_PUBLIC_API_URL!;
       const url = `${baseUrl}/companies/${encodeURIComponent(companySlug)}/candidates`;
 
       // Payload alineado a lo que usaste en Postman + extras del formulario

@@ -64,7 +64,7 @@ export default function PanelPage() {
         return;
       }
 
-      fetch(`${process.env.NEXT_PUBLIC_API_URL || "http://localhost:3001"}/companies/${company.slug}/candidates`)
+      fetch(`${process.env.NEXT_PUBLIC_API_URL}/companies/${company.slug}/candidates`)
         .then((res) => {
           if (!res.ok) throw new Error("Error al cargar candidatos");
           return res.json();
