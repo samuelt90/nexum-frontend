@@ -207,7 +207,7 @@ export default function ApplyPage() {
           }}
         >
           <form onSubmit={onSubmit} style={{ display: "grid", gap: 12 }}>
-            <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12 }}>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
                 label="Nombres"
                 value={data.nombres}
