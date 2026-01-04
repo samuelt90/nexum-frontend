@@ -192,21 +192,16 @@ export default function ApplyPage() {
   return (
     <main className="min-h-screen px-4 py-6">
       <div className="mx-auto w-full max-w-xl">
-        <h1 style={{ fontSize: 24, fontWeight: 900, margin: 0 }}>Registro de candidato</h1>
+        <h1 className="text-2xl font-extrabold">Registro de candidato</h1>
 
-        <p style={{ marginTop: 6, opacity: 0.75 }}>
+        <p className="mt-1 text-sm text-gray-500">
           Empresa: <b>{companySlug || "-"}</b>
         </p>
 
         <div
-          style={{
-            marginTop: 14,
-            border: "1px solid #e5e7eb",
-            borderRadius: 16,
-            padding: 14,
-          }}
+          className="mt-4 rounded-xl border border-gray-200 p-4 bg-white"
         >
-          <form onSubmit={onSubmit} style={{ display: "grid", gap: 12 }}>
+          <form onSubmit={onSubmit} className="grid gap-3">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
               <Field
                 label="Nombres"
