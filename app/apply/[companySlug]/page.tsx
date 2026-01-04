@@ -190,8 +190,8 @@ export default function ApplyPage() {
   }
 
   return (
-    <main style={{ minHeight: "100vh", padding: 16 }}>
-      <div style={{ maxWidth: 580, margin: "0 auto" }}>
+    <main className="min-h-screen px-4 py-6">
+      <div className="mx-auto w-full max-w-xl">
         <h1 style={{ fontSize: 24, fontWeight: 900, margin: 0 }}>Registro de candidato</h1>
 
         <p style={{ marginTop: 6, opacity: 0.75 }}>
